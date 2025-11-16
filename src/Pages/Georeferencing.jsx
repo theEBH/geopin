@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react';
 import { Location } from '@/entities/Location';
 import { User } from '@/entities/User';
-import MapPicker from '../components/map/MapPicker';
+import MapPicker from '../components/map/MapPicker.js';
 import { Alert, AlertDescription } from "@/components/ui/alert";
 import { Card, CardContent, CardHeader, CardTitle, CardFooter } from "@/components/ui/card";
 import { AlertCircle, MapPin, CheckCircle, Loader2 } from 'lucide-react';
