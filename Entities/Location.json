@@ -1,0 +1,37 @@
+{
+  "name": "Location",
+  "type": "object",
+  "properties": {
+    "description": {
+      "type": "string",
+      "description": "Text description of the location"
+    },
+    "is_active": {
+      "type": "boolean",
+      "description": "Whether this location is still in the pool",
+      "default": true
+    },
+    "answers": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "latitude": {
+            "type": "number"
+          },
+          "longitude": {
+            "type": "number"
+          },
+          "error_estimate": {
+            "type": "number",
+            "description": "Error estimate in meters"
+          },
+          "user_email": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  },
+  "required": []
+}
